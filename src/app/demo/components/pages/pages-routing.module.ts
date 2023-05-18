@@ -10,11 +10,10 @@ import { RouterModule } from '@angular/router';
         { path: 'control', data: { breadcrumb: 'control' }, loadChildren: () => import('./control/control.module').then(m => m.ControlModule) },
         { path: 'controleur', data: { breadcrumb: 'controleur' }, loadChildren: () => import('./controleur/controleur.module').then(m => m.ControleurModule) },
         { path: 'controlType', data: { breadcrumb: 'controlType' }, loadChildren: () => import('./controlType/controlType.module').then(m => m.ControlTypeModule) },
-        { path: 'controlCategory', data: { breadcrumb: 'controlCategory' }, loadChildren: () => import('./controlCategory/controlCategory.module').then(m => m.ControlCategoryModule) }
-
-
-
-
+        { path: 'controlCategory', data: { breadcrumb: 'controlCategory' }, loadChildren: () => import('./controlCategory/controlCategory.module').then(m => m.ControlCategoryModule) },
+        { path: 'rejectedPiece', data: { breadcrumb: 'rejectedPiece' }, loadChildren: () => import('./rejecetdPiece/rejectedPiece.module').then(m => m.RejectedPieceModule) },
+        { path: 'problem', data: { breadcrumb: 'problem' }, loadChildren: () => import('./problem/problem.module').then(m => m.ProblemModule) },
+        { path: 'problemFamily', data: { breadcrumb: 'problemFamily' }, loadChildren: () => import('./problemFamily/problemFamily.module').then(m => m.ProblemFamilyModule) }
 
     ])],
     exports: [RouterModule]
